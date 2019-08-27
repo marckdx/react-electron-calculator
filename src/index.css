@@ -1,0 +1,17 @@
+html, body, #root
+{
+    margin: 0 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+*{
+    font-family: 'RobotoMono', monospace;
+}
+
+@font-face{
+    font-family: 'RobotoMono';
+    src: url('./fonts/RobotoMono-Thin.ttf');
+}

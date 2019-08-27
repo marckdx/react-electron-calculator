@@ -1,0 +1,47 @@
+{
+    "name": "calculator",
+    "version": "0.0.1",
+    "license": "MIT",
+    "description": "Simple calculator",
+    "author": "Blascke <hello@blascke.com>",
+    "main": "electron.js",
+    "scripts": {
+      "start": "npm install && electron electron.js",
+      "pack": "build --dir",
+      "dist": "build"
+    },
+    "build": {
+      "appId": "com.blascke.calculator",
+      "category": "calculator",
+      "dmg": {
+        "contents": [
+          {
+            "x": 110,
+            "y": 150
+          },
+          {
+            "x": 240,
+            "y": 150,
+            "type": "link",
+            "path": "/Applications"
+          }
+        ]
+      },
+      "linux": {
+        "target": [
+          "AppImage",
+          "deb"
+        ]
+      },
+      "win": {
+        "target": "squirrel",
+        "icon": "favicon.ico"
+      }
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "electron": "latest",
+      "electron-builder": "latest"
+    }
+  }
